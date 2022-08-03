@@ -11,7 +11,7 @@ RUN pip3 install -r requirements.txt
 # Run tests
 RUN pip3 install pylint pytest
 RUN pylint $(pwd)
-RUN pytest server -o log_cli=true
+RUN pytest -o log_cli=true
 RUN pip3 uninstall pylint pytest -y
 
 CMD uvicorn app:server --host 0.0.0.0

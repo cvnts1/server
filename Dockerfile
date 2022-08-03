@@ -14,4 +14,4 @@ RUN pylint app
 RUN pytest -o log_cli=true
 RUN pip3 uninstall pylint pytest requests -y
 
-CMD uvicorn app:server --host 0.0.0.0
+CMD uvicorn app.server:server --host 0.0.0.0

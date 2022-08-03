@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import api, health
+from .routers import api, health
 
 server = FastAPI()
 server.include_router(health.router, prefix="/-")

@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from config import health_message
+from ..config import health_message
 
 router = APIRouter()
 

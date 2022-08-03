@@ -1,3 +1,4 @@
+""" API server """
 from fastapi import FastAPI
 from .routers import api, health
 

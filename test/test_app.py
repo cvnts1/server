@@ -1,7 +1,7 @@
 """ Testing module """
 from fastapi.testclient import TestClient
-from app import server
-from config import health_message
+from app.server import server
+from app.config import health_message
 
 test_client = TestClient(server)
 

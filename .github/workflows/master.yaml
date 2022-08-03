@@ -10,10 +10,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Run tests
-        run: |
-          pytest $GITHUB_WORKSPACE -o log_cli=true
-
       - name: Create container
         run: |
           export REGISTRY_AUTH="$(echo -n $REGISTRY_USER:$REGISTRY_TOKEN | base64)"

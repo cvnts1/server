@@ -8,4 +8,3 @@ router = APIRouter()
 async def health():
     """ Return pre-defined health message """
     return {"message": health_message, "additional_info": "hello"}
-    
